@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./productpageStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <title>Product Page</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="./img/Logo_Blanco.png" alt="Multimax Store"></a>
+
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="#" class="nav-link">Categorias</a></li>
+                <li class="nav-list-item"><a href="#" class="nav-link">Catalogo</a></li>
+                <li class="nav-list-item"><a href="#" class="nav-link">¿Como Comprar?</a></li>
+                <li class="nav-list-item"><a href="#" class="nav-link selected">Contacto</a></li>
+            </ul>
+
+            <label class="search-label">
+                <i class="ti ti-zoom-filled" id="search-btn"></i>
+                <input class="search-inp" type="search" id="search-input" placeholder="Busca el producto que deseas">
+            </label>
+        </nav>
+    </header>
+
+    <div class="product-details-container">
+        <img src="./img/equipo-de-sonido.jpg" alt="minicomponente">
+
+        <div class="info">
+            <h1>Minicomponente 230W RMS</h1>
+<br>
+            <div class="desc-details">
+                <div class="description">
+                    <h2>Descripción</h2>
+                    <p>Minicomponente LG XBOOM CM4360 proporciona un sonido extraordinario de 230 vatios, para que puedas disfrutar de tu música preferida con familiares y amigos.</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="flex-container">
+                <div class="price-buy">
+                    <div class="price">
+                        <h4>Precio:</h4>
+                        <h3>99,99$</h3>
+                    </div>
+
+                    <div>
+                        <button class="buy-btn" id="buy-btn">Comprar <i class="ti ti-shopping-cart-plus"></i></button>
+                    </div>
+                </div>
+
+
+                <div class="details">
+                    <h2>Detalles Técnicos</h2>
+                    <br>
+                    <ul>
+                        <li>Potencia de salida (230 Watts RMS): Cornetas 115 Watts RMS x2.</li>
+                        <li>Puerto USB.</li>
+                        <li>Entrada de audio portátil, Entrada Auxiliar.</li>
+                        <li>Radio AM/FM.</li>
+                        <li>4 Modos de ecualización.</li>
+                        <li>Lector de CD.</li>
+                        <li>Bluetooth.</li>
+                        <li>Aplicación remota por Bluetooth (Android y Apple).</li>
+                        <li>Sincronización de sonido del TV (TV LG).</li>
+                        <li>Dimensiones Cerebro: Ancho: 20,5 cm. Altura: 27,8 cm. Profundidad: 28,6 cm.</li>
+                        <li>Dimensiones Cornetas: Ancho: 20 cm. Altura: 20 cm. Profundidad: 28,5 cm.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="purchase-window-container">
+            <div class="p-window">
+                <div class="window-btns">
+                    <button id="close-window-btn"><i class="ti ti-chevrons-left"></i>Salir</button>
+                </div>
+<br>
+                <h2>Realizar Pedido</h2>
+<br>
+                <div class="w-flex-container">
+                    <div class="instructions">
+                        <h3>Paso a Paso</h3>
+                        <p>- Presiona el Botón que dice "<b>Realizar Pedido</b>".
+                        <br>
+                        - Termina tu pedido por <b>Whatsapp</b>.
+                        <br>
+                        - Realiza el Pago y Listo!.
+                        </p>
+                    </div>
+
+                    <div class="order-form">
+                        <img src="./img/equipo-de-sonido.jpg" alt="minicomponente">
+                        <div class="order-flex-container">
+                            <h3 id="product-name">Minicomponente 230W RMS</h3>
+                            <br>
+                            <form id="order-form">
+                                <label class="quantity-input-label" for="quantity">Cantidad:
+                                    <input type="number" id="quantity" value="1" class="order-input" min="1" oninput="refresh()">
+                                </label>
+                                <div class="radio-inputs">
+                                    <h4>Retirar en:</h4>
+                                    <label for="pickup">
+                                        <input type="radio" name="pick" id="pickup" value="Retirar en Local">
+                                    Local</label>
+                                    
+                                    <label for="delivery">
+                                        <input type="radio" name="pick" id="delivery" value="Delivery">
+                                    Delivery</label>
+                                </div>
+                            </form>
+                            <br>
+                            <p>Precio Total: <b id="product-price"></b></p>
+                            <br>
+                            <button href="#" class="order-btn" id="order-btn">Realizar Pedido <i class="ti ti-brand-whatsapp"></i></button>
+                            <br>
+                            <p id="message"></p>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
