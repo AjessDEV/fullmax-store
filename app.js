@@ -1,3 +1,5 @@
+// Navbar
+
 const navbar = document.querySelector('.header')
 
 window.addEventListener('scroll', () => {
@@ -6,13 +8,6 @@ window.addEventListener('scroll', () => {
     } else {
         navbar.classList.remove('header_active')
     }
-})
-
-const searchInput = document.querySelector(".search-inp")
-const searchButton = document.getElementById("search-btn")
-
-searchButton.addEventListener("click", () => {
-    searchInput.classList.toggle("search-inp_active")
 })
 
 // Product Page
@@ -64,7 +59,7 @@ orderBtn.addEventListener('click', () => {
     
     if(radioInput1.checked === false) {
         errMessage.innerHTML = `Debes seleccionar un<b id="message">Metodo de Retiro</b>`
-    } else if(radioInput1.checked === false) {
+    } else if(radioInput2.checked === false) {
         errMessage.innerHTML = `Debes seleccionar un<b id="message">Metodo de Retiro</b>`
     }
 
