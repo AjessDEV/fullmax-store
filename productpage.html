@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./productpageStyle.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="shortcut icon" href="./img/max-favicon.png" type="image/x-icon">
     <title>Product Page</title>
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
-            <a href="./mainstore.html" class="logo"><img src="./img/Logo_Blanco.png" alt="Multimax Store"></a>
+            <a href="./mainstore.html" class="logo"><img src="./img/Logo_Azul.png" alt="Multimax Store"></a>
 
             <ul class="nav-list">
-                <li class="nav-list-item"><a href="#" class="nav-link">Categorias</a></li>
-                <li class="nav-list-item"><a href="#" class="nav-link">Catalogo</a></li>
+                <li class="nav-list-item"><a href="./Categories.html" class="nav-link">Categorías</a></li>
+                <li class="nav-list-item"><a href="./Catalogo.html" class="nav-link">Catálogo</a></li>
                 <li class="nav-list-item"><a href="#" class="nav-link">¿Como Comprar?</a></li>
-                <li class="nav-list-item"><a href="#" class="nav-link selected">Contacto</a></li>
+                <li class="nav-list-item"><a href="./Contact.html" class="nav-link selected">Contacto</a></li>
             </ul>
 
-            <a class="search-btn" href="./searchPage.html"><i class="ti ti-zoom-filled"></i></a>
+            <a class="search-btn" href="./searchPage.html"><i class="ti ti-zoom-filled"></i> <span>Buscar</span></a>
         </nav>
     </header>
 
@@ -94,15 +95,16 @@
                             <h3 id="product-name">Minicomponente 230W RMS</h3>
                             <br>
                             <form id="order-form">
-                                <label class="quantity-input-label" for="quantity">Cantidad:
+                                <label class="q-c-input-label" for="quantity">Cantidad:
                                     <input type="number" id="quantity" value="1" class="order-input" min="1" oninput="refresh()">
                                 </label>
+
                                 <div class="radio-inputs">
                                     <h4>Retirar en:</h4>
                                     <label for="pickup">
                                         <input type="radio" name="pick" id="pickup" value="Retirar en Local">
                                     Local</label>
-                                    
+
                                     <label for="delivery">
                                         <input type="radio" name="pick" id="delivery" value="Delivery">
                                     Delivery</label>
@@ -122,6 +124,35 @@
             </div>
         </div>
     </div>
+
+    <br><br><br><br>
+    <footer>
+        <a href="#" class="footer-logo">
+            <img src="/img/Logo_Azul.png" alt="Multimax Store">
+        </a>
+<br><br>
+        <div class="footer-flex-container">
+            <a href="./Catalogo.html" class="footer-link">Catálogo</a>
+            <a href="./Categories.html" class="footer-link">Categorias</a>
+            <a href="./news.html" class="footer-link">Noticias</a>
+            <a href="#" class="footer-link">PRIORITYMAX</a>
+            <a href="#" class="footer-link">Afiliación</a>
+            <a href="#" class="footer-link">Nuestras Tiendas</a>
+            <a href="./Contact.html" class="footer-link">Contacto</a>
+        </div>
+<br>
+        <div class="rrss">
+            <a class="rs-link" href="#"><i class="ti ti-brand-facebook-filled"></i></a>
+            <a class="rs-link" href="#"><i class="ti ti-brand-twitter-filled"></i></a>
+            <a class="rs-link" href="#"><i class="ti ti-brand-instagram"></i></a>
+            <a class="rs-link" href="#"><i class="ti ti-brand-whatsapp"></i></a>
+        </div>
+<br>
+        <div class="terms-pol">
+            <a href="#">Terminos y Condiciones</a>
+            <a href="#">Politicas de Privacidad</a>
+        </div>
+    </footer>
     <script src="./app.js"></script>
 </body>
 </html>

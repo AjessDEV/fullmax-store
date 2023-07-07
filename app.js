@@ -57,9 +57,7 @@ orderBtn.addEventListener('click', () => {
 
     let errMessage = document.getElementById('message')
     
-    if(radioInput1.checked === false) {
-        errMessage.innerHTML = `Debes seleccionar un<b id="message">Metodo de Retiro</b>`
-    } else if(radioInput2.checked === false) {
+    if(radioInput1.checked === false && radioInput2.checked === false) {
         errMessage.innerHTML = `Debes seleccionar un<b id="message">Metodo de Retiro</b>`
     }
 
