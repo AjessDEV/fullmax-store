@@ -8,15 +8,15 @@ form.addEventListener('submit', e => {
 
 
 function sendEmail() {
-    var name = document.getElementById("name-input").value;
-    var email = document.getElementById("email-input").value;
-    var message = document.getElementById("message-input").value;
+    let name = document.getElementById("name-input").value
+    let email = document.getElementById("email-input").value
+    let message = document.getElementById("message-input").value
   
-    var correo =    "mailto:ajessdev@gmail.com" +
+    let correo =    "mailto:ajessdev@gmail.com" +
                     "?subject=Contacto desde el formulario" +
                     "&body=Nombre: " + encodeURIComponent(name) +
                     "%0AEmail: " + encodeURIComponent(email) +
-                    "%0AMensaje: " + encodeURIComponent(message);
+                    "%0AMensaje: " + encodeURIComponent(message)
   
-    window.location.href = correo;
+    window.location.href = correo
 }
